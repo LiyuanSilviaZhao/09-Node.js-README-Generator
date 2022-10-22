@@ -116,7 +116,7 @@ const questions = [
 ]
 
 function writeToFile(data) {
-    fs.writeFile("README.md", data, (err) =>
+    fs.writeFile("newREADME.md", data, (err) =>
         err ? console.log(err) : console.log('Success!')
     );
 };
