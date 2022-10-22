@@ -115,16 +115,12 @@ const questions = [
     },
 ]
 
-function writeToFile(data) {
-    fs.writeFile("newREADME.md", data, (err) =>
-        err ? console.log(err) : console.log('Success!')
-    );
-};
-
 function init() {
     inquirer.prompt(questions)
         .then(function (userInput) {
-            writeToFile(generateMarkdown(userInput));
+            fs.writeFile("newREADME.md", generateMarkdown(userInput), (err) =>
+                err ? console.log(err) : console.log('Success!')
+            );
         });
 
 }
