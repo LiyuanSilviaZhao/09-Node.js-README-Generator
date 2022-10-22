@@ -11,7 +11,7 @@ const questions = [
             if (titleInput) {
                 return true;
             } else {
-                console.log('Please enter the project title!');
+                console.log('Please enter the project title.');
                 return false;
             }
         }
@@ -24,7 +24,7 @@ const questions = [
             if (descriptionInput) {
                 return true;
             } else {
-                console.log('Please enter description!');
+                console.log('Please enter description.');
                 return false;
             }
         }
@@ -37,7 +37,7 @@ const questions = [
             if (installationInput) {
                 return true;
             } else {
-                console.log('Please enter installation!');
+                console.log('Please enter installation.');
                 return false;
             }
         }
@@ -50,7 +50,7 @@ const questions = [
             if (usageInput) {
                 return true;
             } else {
-                console.log('Please enter usage!');
+                console.log('Please enter usage.');
                 return false;
             }
         }
@@ -69,7 +69,7 @@ const questions = [
             if (contributingInput) {
                 return true;
             } else {
-                console.log('Please enter contributing!');
+                console.log('Please enter contributing.');
                 return false;
             }
         }
@@ -82,7 +82,7 @@ const questions = [
             if (testsInput) {
                 return true;
             } else {
-                console.log('Please enter tests!');
+                console.log('Please enter tests.');
                 return false;
             }
         }
@@ -90,12 +90,12 @@ const questions = [
     {
         type: 'input',
         name: 'githubUsername',
-        message: 'Provide githubUsername',
+        message: 'Provide github Username',
         validate: usernameInput => {
             if (usernameInput) {
                 return true;
             } else {
-                console.log('Please enter github username!');
+                console.log('Please enter github username.');
                 return false;
             }
         }
@@ -108,7 +108,7 @@ const questions = [
             if (emailInput) {
                 return true;
             } else {
-                console.log('Please enter email!');
+                console.log('Please enter email.');
                 return false;
             }
         }
